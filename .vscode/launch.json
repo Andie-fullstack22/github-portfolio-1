@@ -2,38 +2,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "npm start",
-            "name": "Run npm start",
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Portfolio Directly",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "command": "cd ${workspaceFolder} && npx serve",
+            "name": "Serve Portfolio (Static Server)",
             "request": "launch",
             "type": "node-terminal"
         },
         {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Portfolio in Browser",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/portfolio"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open Portfolio",
-            "file": "${workspaceFolder}/index.html",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open Portfolio (Alternative Path)",
-            "file": "${workspaceFolder}/portfolio/index.html",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:5000",
             "webRoot": "${workspaceFolder}"
         }
     ]
-} 
+}
