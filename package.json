@@ -1,0 +1,12 @@
+{
+    "name": "github-portfolio",
+    "version": "1.0.0",
+    "description": "Personal Portfolio Website",
+    "scripts": {
+        "start": "npx http-server portfolio -p 3000",
+        "build": "echo 'No build step needed'"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1"
+    }
+} 
